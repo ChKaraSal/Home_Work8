@@ -57,7 +57,7 @@ void PrintArray(int[,] array)
 // Напишите программу, которая будет находить строку с наименьшей суммой элементов. 
 
 Console.WriteLine("Задача №56.");
-int[,] table1 = new int[4, 5];
+int[,] table1 = new int[5, 4];
 FillArrayRandom1(table1);
 PrintArray1(table1);
 NumberRowMinSumElements(table1);
@@ -113,10 +113,10 @@ void FillArrayRandom1(int[,] array)
 Console.WriteLine("Задача №62.");
 int n = 4;
 int[,] sqareMatrix = new int[n, n];
-
 int temp = 1;
 int i = 0;
 int j = 0;
+
 while (temp <= sqareMatrix.GetLength(0) * sqareMatrix.GetLength(1))
 {
   sqareMatrix[i, j] = temp;
@@ -130,8 +130,8 @@ while (temp <= sqareMatrix.GetLength(0) * sqareMatrix.GetLength(1))
   else
     i--;
 }
-WriteArray(sqareMatrix);
 
+WriteArray(sqareMatrix);
 void WriteArray (int[,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
